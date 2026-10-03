@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Boyfriend Day, Baal ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#fff0f3;
+  color:#542735;
+  font-family:Poppins,sans-serif;
+}
+section{min-height:100vh;padding:70px 20px;display:flex;align-items:center;justify-content:center}
+.card{width:min(900px,100%);margin:auto}
+.hero{text-align:center;background:radial-gradient(circle at 50% 25%,#fff 0,#ffeef2 42%,#ffdfe7 100%)}
+.tiny{display:inline-block;background:white;padding:7px 15px;border-radius:20px;font-size:12px;color:#b02c52;box-shadow:0 5px 20px #b02c5218}
+h1{font-family:"DM Serif Display",serif;font-size:clamp(42px,8vw,78px);line-height:1;margin:22px 0 5px;color:#8f2948}
+h2{font-family:"DM Serif Display",serif;font-size:clamp(32px,6vw,55px);color:#9e3150;margin:10px 0}
+.script{font-family:"Great Vibes",cursive;font-size:42px;color:#b72f53}
+.sub{color:#80616b;max-width:600px;margin:15px auto 25px}
+.btn{
+  border:0;background:#c92f57;color:white;padding:14px 25px;border-radius:30px;
+  font:600 14px Poppins;cursor:pointer;box-shadow:0 10px 25px #c92f5730;
+  transition:.2s
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.heart{font-size:72px;animation:float 2.4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.memories{background:#fff3f5}
+.memory-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:30px}
+.memory{
+ background:white;padding:12px 12px 18px;box-shadow:0 8px 25px #8f294815;
+ transform:rotate(-1deg);border-radius:3px
+}
+.memory:nth-child(even){transform:rotate(1.2deg)}
+.photo{
+ height:260px;border-radius:2px;display:flex;align-items:center;justify-content:center;
+ background:linear-gradient(135deg,#f8b6c7,#f9e2e8);font-size:44px
+}
+.caption{text-align:center;font-family:"Great Vibes",cursive;font-size:25px;margin-top:9px;color:#6e4853}
+.letter-wrap{background:#ffe7ed}
+.letter{
+ background:#fffdf9;max-width:720px;padding:45px 42px;box-shadow:0 15px 45px #6d30401c;
+ border-radius:4px;position:relative
+}
+.letter p{line-height:1.9;color:#6e5a61;font-size:14px}
+.signature{font-family:"Great Vibes",cursive;font-size:38px;color:#ad3151;text-align:right}
+.award{text-align:center;background:#fff0f3}
+.award-box{background:white;padding:45px 25px;border-radius:22px;box-shadow:0 15px 50px #8f294818}
+.badge{font-size:70px}
+.hidden{display:none}
+#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#5d2939;color:white;padding:12px 18px;border-radius:30px;font-size:13px;opacity:0;pointer-events:none;transition:.3s;z-index:10}
+#toast.show{opacity:1}
+@media(max-width:600px){
+ section{padding:55px 15px}
+ .memory-grid{grid-template-columns:1fr}
+ .photo{height:230px}
+ .letter{padding:30px 23px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero" id="home">
+  <div class="card">
+    <div class="heart">💗</div>
+    <div class="tiny">TO MY AMAZING BOYFRIEND 🤍</div>
+    <h1>Happy Boyfriend Day</h1>
+    <div class="script">Baal ❤️</div>
+    <p class="sub">Every day with you feels like my favourite little adventure.</p>
+    <button class="btn" onclick="go('memories')">Begin Our Journey →</button>
+  </div>
+</section>
+
+<section class="memories" id="memories">
+  <div class="card">
+    <div style="text-align:center">
+      <div class="tiny">OUR CAPTURED MOMENTS</div>
+      <h2>Sweet Memories With You 📸</h2>
+      <p class="sub">A few snapshots of our favourite moments together.</p>
+    </div>
+
+    <div class="memory-grid">
+      <div class="memory">
+        <div class="photo">📷<br></div>
+        <div class="caption">"Our favourite moment"</div>
+      </div>
+      <div class="memory">
+        <div class="photo">💞</div>
+        <div class="caption">"My favourite human"</div>
+      </div>
+      <div class="memory">
+        <div class="photo">🌅</div>
+        <div class="caption">"A memory I'll keep forever"</div>
+      </div>
+      <div class="memory">
+        <div class="photo">🫶</div>
+        <div class="caption">"Us, always"</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:35px">
+      <button class="btn" onclick="go('letter')">Read My Letter 💌 →</button>
+    </div>
+  </div>
+</section>
+
+<section class="letter-wrap" id="letter">
+  <div class="card">
+    <div class="letter">
+      <div class="tiny">A LITTLE LETTER FOR YOU</div>
+      <h2 style="font-size:42px">My Dearest Baal,</h2>
+      <p>
+        If someone had told me that I would find someone who makes me feel this
+        loved, safe and understood, I probably wouldn't have believed them.
+        And then I found you. ❤️
+      </p>
+      <p>
+        Being your girl is one of my favourite things in the world. You are not
+        only my boyfriend, but also my best friend, my comfort person and
+        someone who makes ordinary days feel special.
+      </p>
+      <p>
+        Thank you for all the little things you do, for the laughs, the talks,
+        the memories and for simply being you. I hope we keep making beautiful
+        memories together.
+      </p>
+      <p>
+        Happy Boyfriend Day, my love. Here's to us, to every silly moment,
+        every smile and all the little adventures still waiting for us. 💗
+      </p>
+      <div class="signature">Forever yours,<br>Hansika ❤️</div>
+      <div style="text-align:center;margin-top:25px">
+        <button class="btn" onclick="go('award')">Continue to Your Surprise 🎁 →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="award" id="award">
+  <div class="card">
+    <div class="award-box">
+      <div class="badge">🏆💗</div>
+      <div class="tiny">OFFICIALLY YOUR AWARD</div>
+      <h2>Best Boyfriend Ever</h2>
+      <p class="sub">Awarded to <b>Shriraj — my Baal</b>, for being wonderfully you.</p>
+      <button class="btn" onclick="surprise()">One Last Thing 💌</button>
+      <p id="surprise" class="hidden" style="margin-top:25px;font-family:'Great Vibes',cursive;font-size:34px;color:#ad3151">
+        I love you more than all the little hearts on this page. ❤️
+      </p>
+    </div>
+  </div>
+</section>
+
+<div id="toast">Made with love for Baal ❤️</div>
+
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+function surprise(){
+  document.getElementById('surprise').classList.remove('hidden');
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+  for(let i=0;i<16;i++){
+    const h=document.createElement('div');
+    h.textContent=['💗','💕','❤️','✨'][Math.floor(Math.random()*4)];
+    h.style.position='fixed';
+    h.style.left=Math.random()*100+'vw';
+    h.style.top='100vh';
+    h.style.fontSize=(18+Math.random()*18)+'px';
+    h.style.zIndex=20;
+    h.style.transition='transform 2s ease, opacity 2s ease';
+    document.body.appendChild(h);
+    requestAnimationFrame(()=>{h.style.transform=`translateY(-${80+Math.random()*70}vh) rotate(${Math.random()*90-45}deg)`;h.style.opacity='0';});
+    setTimeout(()=>h.remove(),2100);
+  }
+}
+</script>
+</body>
+</html>
